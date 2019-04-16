@@ -5,6 +5,17 @@ import "fmt"
 func init() {
 	//testInit()
 	testCopy()
+	testChange()
+}
+
+func testChange() {
+	arr1 := []string{"red","blue","black","yellow","grey"}
+	change(arr1)
+	fmt.Println(arr1)
+}
+
+func change(arr []string) {
+	arr[1] = "lecon"
 }
 
 func testCopy() {

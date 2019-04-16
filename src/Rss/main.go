@@ -6,6 +6,7 @@ import (
 	// 必须加入下面代码，否则matcher包不会初始化
 	_ "./matchers"
 	"./search"
+	_ "./test"
 )
 
 func init() {
