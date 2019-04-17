@@ -2,15 +2,15 @@ package main
 
 import (
 	"./channel"
-	"./sync1"
 	"fmt"
 	"runtime"
 	"sync"
 )
 
 func main() {
-	sync1.Run()
-	channel.Run()
+	//sync1.Run()
+	//channel.Run()
+	channel.Run2()
 }
 
 func hello() {
