@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>
+        {{.name}}
+        {{.email}}
+    </h1>
+
+    <form id="user" action="/template" method="post">
+        {{ .xsrfdata }}
+        名字：<input name="username" type="text" value="{{.userForm.Name}}"/>
+        年龄：<input name="age" type="text" value="{{.userForm.Age}}"/>
+        邮箱：<input name="Email" type="text" value="{{.userForm.Email}}"/>
+        <input type="submit" value="提交" />
+    </form>
+</body>
+</html>

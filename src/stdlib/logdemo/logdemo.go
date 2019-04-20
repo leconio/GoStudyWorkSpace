@@ -1,4 +1,4 @@
-package main
+package logdemo
 
 import (
 	"log"
@@ -11,7 +11,7 @@ func init() {
 	log.SetFlags(log.Ldate | log.Ltime | log.Llongfile)
 }
 
-func main() {
+func Run() {
 	log.Println("message")
 
 	log.Fatal("fatal")
